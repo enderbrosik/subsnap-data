@@ -1,0 +1,53 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so the version can be compared with the main branch.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Choose the revision to compare "version" against
+        env:
+          EVENT: ${{ github.event_name }}
+          REF: ${{ github.ref }}
+          BASE_REF: ${{ github.base_ref }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            base="origin/$BASE_REF"
+          elif [ "$REF" = "refs/heads/main" ]; then
+            # A push to main is compared with main as it was before the push.
+            if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+              base="$BEFORE"
+            else
+              base="HEAD~1"
+            fi
+          else
+            base="origin/main"
+          fi
+          if git rev-parse --verify --quiet "$base^{commit}" > /dev/null; then
+            echo "VALIDATE_BASE=$base" >> "$GITHUB_ENV"
+            echo "Comparing with $base"
+          else
+            echo "No base revision found ($base); the version check will be skipped."
+          fi
+
+      - name: Validate services.json
+        run: npm run validate
+
+      - name: Build the site
+        run: npm run build
