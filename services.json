@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-06",
-  "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps.",
+  "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
     {
       "name": "Netflix",
@@ -9,6 +9,7 @@
         "netflix"
       ],
       "domain": "netflix.com",
+      "category": "entertainment",
       "manage": "https://www.netflix.com/cancelplan",
       "plans": [
         {
@@ -180,6 +181,7 @@
         "spotify"
       ],
       "domain": "spotify.com",
+      "category": "music",
       "manage": "https://www.spotify.com/account/subscription/",
       "plans": [
         {
@@ -358,6 +360,7 @@
         "disney"
       ],
       "domain": "disneyplus.com",
+      "category": "entertainment",
       "manage": "https://www.disneyplus.com/account",
       "plans": [
         {
@@ -409,6 +412,7 @@
         "hulu"
       ],
       "domain": "hulu.com",
+      "category": "entertainment",
       "manage": "https://secure.hulu.com/account",
       "manageRegions": [
         "US"
@@ -420,7 +424,8 @@
         "hbomax",
         "max"
       ],
-      "domain": "max.com"
+      "domain": "max.com",
+      "category": "entertainment"
     },
     {
       "name": "Prime Video",
@@ -428,6 +433,7 @@
         "primevideo"
       ],
       "domain": "primevideo.com",
+      "category": "entertainment",
       "manage": "https://www.amazon.com/gp/primecentral",
       "manageRegions": [
         "US"
@@ -441,6 +447,7 @@
         "prime"
       ],
       "domain": "amazon.com",
+      "category": "other",
       "manage": "https://www.amazon.com/gp/primecentral",
       "manageRegions": [
         "US"
@@ -452,6 +459,7 @@
         "youtube"
       ],
       "domain": "youtube.com",
+      "category": "entertainment",
       "manage": "https://www.youtube.com/paid_memberships"
     },
     {
@@ -460,6 +468,7 @@
         "icloud"
       ],
       "domain": "apple.com",
+      "category": "cloud",
       "manage": "https://apps.apple.com/account/subscriptions",
       "plans": [
         {
@@ -646,6 +655,7 @@
         "applemusic"
       ],
       "domain": "apple.com",
+      "category": "music",
       "manage": "https://apps.apple.com/account/subscriptions",
       "plans": [
         {
@@ -774,7 +784,9 @@
         "itunes"
       ],
       "domain": "apple.com",
-      "manage": "https://apps.apple.com/account/subscriptions"
+      "category": "other",
+      "manage": "https://apps.apple.com/account/subscriptions",
+      "hidden": true
     },
     {
       "name": "Microsoft",
@@ -785,6 +797,7 @@
         "gamepass"
       ],
       "domain": "microsoft.com",
+      "category": "productivity",
       "manage": "https://account.microsoft.com/services"
     },
     {
@@ -794,6 +807,7 @@
         "google"
       ],
       "domain": "google.com",
+      "category": "cloud",
       "manage": "https://one.google.com/settings"
     },
     {
@@ -803,6 +817,7 @@
         "creativecloud"
       ],
       "domain": "adobe.com",
+      "category": "productivity",
       "manage": "https://account.adobe.com/plans"
     },
     {
@@ -811,6 +826,7 @@
         "dropbox"
       ],
       "domain": "dropbox.com",
+      "category": "cloud",
       "manage": "https://www.dropbox.com/account/plan"
     },
     {
@@ -819,7 +835,8 @@
         "chatgpt",
         "openai"
       ],
-      "domain": "openai.com"
+      "domain": "openai.com",
+      "category": "productivity"
     },
     {
       "name": "Claude",
@@ -828,6 +845,7 @@
         "anthropic"
       ],
       "domain": "claude.ai",
+      "category": "productivity",
       "manage": "https://claude.ai/settings/billing"
     },
     {
@@ -835,7 +853,8 @@
       "aliases": [
         "notion"
       ],
-      "domain": "notion.so"
+      "domain": "notion.so",
+      "category": "productivity"
     },
     {
       "name": "GitHub",
@@ -843,6 +862,7 @@
         "github"
       ],
       "domain": "github.com",
+      "category": "productivity",
       "manage": "https://github.com/settings/billing"
     },
     {
@@ -851,6 +871,7 @@
         "crunchyroll"
       ],
       "domain": "crunchyroll.com",
+      "category": "entertainment",
       "manage": "https://www.crunchyroll.com/account/membership"
     },
     {
@@ -859,6 +880,7 @@
         "paramount"
       ],
       "domain": "paramountplus.com",
+      "category": "entertainment",
       "manage": "https://www.paramountplus.com/account/",
       "manageRegions": [
         "US"
@@ -870,6 +892,7 @@
         "peacock"
       ],
       "domain": "peacocktv.com",
+      "category": "entertainment",
       "manage": "https://www.peacocktv.com/account",
       "manageRegions": [
         "US"
@@ -881,6 +904,7 @@
         "audible"
       ],
       "domain": "audible.com",
+      "category": "entertainment",
       "manage": "https://www.audible.com/account/overview",
       "manageRegions": [
         "US"
@@ -892,6 +916,7 @@
         "patreon"
       ],
       "domain": "patreon.com",
+      "category": "other",
       "manage": "https://www.patreon.com/settings/memberships"
     },
     {
@@ -900,6 +925,7 @@
         "medium"
       ],
       "domain": "medium.com",
+      "category": "news",
       "manage": "https://medium.com/me/membership"
     },
     {
@@ -907,42 +933,48 @@
       "aliases": [
         "duolingo"
       ],
-      "domain": "duolingo.com"
+      "domain": "duolingo.com",
+      "category": "other"
     },
     {
       "name": "Strava",
       "aliases": [
         "strava"
       ],
-      "domain": "strava.com"
+      "domain": "strava.com",
+      "category": "fitness"
     },
     {
       "name": "Twitch",
       "aliases": [
         "twitch"
       ],
-      "domain": "twitch.tv"
+      "domain": "twitch.tv",
+      "category": "entertainment"
     },
     {
       "name": "Canva",
       "aliases": [
         "canva"
       ],
-      "domain": "canva.com"
+      "domain": "canva.com",
+      "category": "productivity"
     },
     {
       "name": "Figma",
       "aliases": [
         "figma"
       ],
-      "domain": "figma.com"
+      "domain": "figma.com",
+      "category": "productivity"
     },
     {
       "name": "LinkedIn",
       "aliases": [
         "linkedin"
       ],
-      "domain": "linkedin.com"
+      "domain": "linkedin.com",
+      "category": "productivity"
     },
     {
       "name": "The New York Times",
@@ -950,7 +982,8 @@
         "nytimes",
         "newyorktimes"
       ],
-      "domain": "nytimes.com"
+      "domain": "nytimes.com",
+      "category": "news"
     },
     {
       "name": "PlayStation",
@@ -958,14 +991,16 @@
         "playstation",
         "psplus"
       ],
-      "domain": "playstation.com"
+      "domain": "playstation.com",
+      "category": "entertainment"
     },
     {
       "name": "Nintendo",
       "aliases": [
         "nintendo"
       ],
-      "domain": "nintendo.com"
+      "domain": "nintendo.com",
+      "category": "entertainment"
     },
     {
       "name": "bol",
@@ -976,6 +1011,7 @@
         "bolplus"
       ],
       "domain": "bol.com",
+      "category": "other",
       "regions": [
         "NL",
         "BE"
@@ -987,6 +1023,7 @@
         "videoland"
       ],
       "domain": "videoland.com",
+      "category": "entertainment",
       "regions": [
         "NL"
       ]
@@ -998,6 +1035,7 @@
         "npo"
       ],
       "domain": "npoplus.nl",
+      "category": "entertainment",
       "regions": [
         "NL"
       ]
@@ -1008,6 +1046,7 @@
         "ziggo"
       ],
       "domain": "ziggo.nl",
+      "category": "other",
       "regions": [
         "NL"
       ]
@@ -1018,6 +1057,7 @@
         "kpn"
       ],
       "domain": "kpn.com",
+      "category": "other",
       "regions": [
         "NL"
       ]
@@ -1029,6 +1069,7 @@
         "tmobile"
       ],
       "domain": "odido.nl",
+      "category": "other",
       "regions": [
         "NL"
       ]
@@ -1039,6 +1080,7 @@
         "thuisbezorgd"
       ],
       "domain": "thuisbezorgd.nl",
+      "category": "other",
       "regions": [
         "NL"
       ]
@@ -1050,6 +1092,7 @@
         "ah"
       ],
       "domain": "ah.nl",
+      "category": "other",
       "regions": [
         "NL"
       ]
@@ -1061,6 +1104,7 @@
         "nsflex"
       ],
       "domain": "ns.nl",
+      "category": "other",
       "regions": [
         "NL"
       ]
