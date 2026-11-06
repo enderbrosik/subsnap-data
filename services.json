@@ -1,0 +1,1069 @@
+{
+  "version": 1,
+  "updated": "2026-11-06",
+  "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps.",
+  "services": [
+    {
+      "name": "Netflix",
+      "aliases": [
+        "netflix"
+      ],
+      "domain": "netflix.com",
+      "manage": "https://www.netflix.com/cancelplan",
+      "plans": [
+        {
+          "regions": [
+            "NL"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 9.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 15.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 20.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "US"
+          ],
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 19.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 26.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GB"
+          ],
+          "currency": "GBP",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 13.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 20.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "DE"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 15.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "FR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 14.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "CA"
+          ],
+          "currency": "CAD",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 18.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 23.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AU"
+          ],
+          "currency": "AUD",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 9.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 20.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 28.99,
+              "cycle": "monthly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spotify",
+      "aliases": [
+        "spotify"
+      ],
+      "domain": "spotify.com",
+      "manage": "https://www.spotify.com/account/subscription/",
+      "plans": [
+        {
+          "regions": [
+            "NL"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 13.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 19.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 23.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "US"
+          ],
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 18.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GB"
+          ],
+          "currency": "GBP",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 5.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 17.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "DE"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 17.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "CA"
+          ],
+          "currency": "CAD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.39,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 13.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 19.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 23.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AU"
+          ],
+          "currency": "AUD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 15.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 22.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 27.99,
+              "cycle": "monthly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disney+",
+      "aliases": [
+        "disney"
+      ],
+      "domain": "disneyplus.com",
+      "manage": "https://www.disneyplus.com/account",
+      "plans": [
+        {
+          "regions": [
+            "NL"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 10.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 15.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "US"
+          ],
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "With ads",
+              "price": 12.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.49,
+              "cycle": "monthly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hulu",
+      "aliases": [
+        "hulu"
+      ],
+      "domain": "hulu.com",
+      "manage": "https://secure.hulu.com/account",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "Max",
+      "aliases": [
+        "hbomax",
+        "max"
+      ],
+      "domain": "max.com"
+    },
+    {
+      "name": "Prime Video",
+      "aliases": [
+        "primevideo"
+      ],
+      "domain": "primevideo.com",
+      "manage": "https://www.amazon.com/gp/primecentral",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "Amazon Prime",
+      "aliases": [
+        "amazonprime",
+        "amazon",
+        "prime"
+      ],
+      "domain": "amazon.com",
+      "manage": "https://www.amazon.com/gp/primecentral",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "aliases": [
+        "youtube"
+      ],
+      "domain": "youtube.com",
+      "manage": "https://www.youtube.com/paid_memberships"
+    },
+    {
+      "name": "iCloud+",
+      "aliases": [
+        "icloud"
+      ],
+      "domain": "apple.com",
+      "manage": "https://apps.apple.com/account/subscriptions",
+      "plans": [
+        {
+          "regions": [
+            "NL",
+            "DE",
+            "FR",
+            "IT",
+            "ES",
+            "BE",
+            "AT",
+            "IE",
+            "PT",
+            "FI",
+            "GR",
+            "LU"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "50 GB",
+              "price": 0.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "200 GB",
+              "price": 2.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "2 TB",
+              "price": 9.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "6 TB",
+              "price": 29.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "12 TB",
+              "price": 59.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "US"
+          ],
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "50 GB",
+              "price": 0.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "200 GB",
+              "price": 2.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "2 TB",
+              "price": 9.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "6 TB",
+              "price": 29.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "12 TB",
+              "price": 59.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GB"
+          ],
+          "currency": "GBP",
+          "plans": [
+            {
+              "name": "50 GB",
+              "price": 0.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "200 GB",
+              "price": 2.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "2 TB",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "6 TB",
+              "price": 26.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "12 TB",
+              "price": 54.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "CA"
+          ],
+          "currency": "CAD",
+          "plans": [
+            {
+              "name": "50 GB",
+              "price": 1.29,
+              "cycle": "monthly"
+            },
+            {
+              "name": "200 GB",
+              "price": 3.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "2 TB",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "6 TB",
+              "price": 39.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "12 TB",
+              "price": 79.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AU"
+          ],
+          "currency": "AUD",
+          "plans": [
+            {
+              "name": "50 GB",
+              "price": 1.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "200 GB",
+              "price": 4.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "2 TB",
+              "price": 14.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "6 TB",
+              "price": 44.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "12 TB",
+              "price": 89.99,
+              "cycle": "monthly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apple Music",
+      "aliases": [
+        "applemusic"
+      ],
+      "domain": "apple.com",
+      "manage": "https://apps.apple.com/account/subscriptions",
+      "plans": [
+        {
+          "regions": [
+            "NL",
+            "DE",
+            "FR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 19.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "US"
+          ],
+          "currency": "USD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 19.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GB"
+          ],
+          "currency": "GBP",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 5.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 19.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "CA"
+          ],
+          "currency": "CAD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 5.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 19.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AU"
+          ],
+          "currency": "AUD",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 14.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 23.99,
+              "cycle": "monthly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Apple",
+      "aliases": [
+        "apple",
+        "itunes"
+      ],
+      "domain": "apple.com",
+      "manage": "https://apps.apple.com/account/subscriptions"
+    },
+    {
+      "name": "Microsoft",
+      "aliases": [
+        "microsoft",
+        "office365",
+        "xbox",
+        "gamepass"
+      ],
+      "domain": "microsoft.com",
+      "manage": "https://account.microsoft.com/services"
+    },
+    {
+      "name": "Google One",
+      "aliases": [
+        "googleone",
+        "google"
+      ],
+      "domain": "google.com",
+      "manage": "https://one.google.com/settings"
+    },
+    {
+      "name": "Adobe",
+      "aliases": [
+        "adobe",
+        "creativecloud"
+      ],
+      "domain": "adobe.com",
+      "manage": "https://account.adobe.com/plans"
+    },
+    {
+      "name": "Dropbox",
+      "aliases": [
+        "dropbox"
+      ],
+      "domain": "dropbox.com",
+      "manage": "https://www.dropbox.com/account/plan"
+    },
+    {
+      "name": "ChatGPT",
+      "aliases": [
+        "chatgpt",
+        "openai"
+      ],
+      "domain": "openai.com"
+    },
+    {
+      "name": "Claude",
+      "aliases": [
+        "claude",
+        "anthropic"
+      ],
+      "domain": "claude.ai",
+      "manage": "https://claude.ai/settings/billing"
+    },
+    {
+      "name": "Notion",
+      "aliases": [
+        "notion"
+      ],
+      "domain": "notion.so"
+    },
+    {
+      "name": "GitHub",
+      "aliases": [
+        "github"
+      ],
+      "domain": "github.com",
+      "manage": "https://github.com/settings/billing"
+    },
+    {
+      "name": "Crunchyroll",
+      "aliases": [
+        "crunchyroll"
+      ],
+      "domain": "crunchyroll.com",
+      "manage": "https://www.crunchyroll.com/account/membership"
+    },
+    {
+      "name": "Paramount+",
+      "aliases": [
+        "paramount"
+      ],
+      "domain": "paramountplus.com",
+      "manage": "https://www.paramountplus.com/account/",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "Peacock",
+      "aliases": [
+        "peacock"
+      ],
+      "domain": "peacocktv.com",
+      "manage": "https://www.peacocktv.com/account",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "Audible",
+      "aliases": [
+        "audible"
+      ],
+      "domain": "audible.com",
+      "manage": "https://www.audible.com/account/overview",
+      "manageRegions": [
+        "US"
+      ]
+    },
+    {
+      "name": "Patreon",
+      "aliases": [
+        "patreon"
+      ],
+      "domain": "patreon.com",
+      "manage": "https://www.patreon.com/settings/memberships"
+    },
+    {
+      "name": "Medium",
+      "aliases": [
+        "medium"
+      ],
+      "domain": "medium.com",
+      "manage": "https://medium.com/me/membership"
+    },
+    {
+      "name": "Duolingo",
+      "aliases": [
+        "duolingo"
+      ],
+      "domain": "duolingo.com"
+    },
+    {
+      "name": "Strava",
+      "aliases": [
+        "strava"
+      ],
+      "domain": "strava.com"
+    },
+    {
+      "name": "Twitch",
+      "aliases": [
+        "twitch"
+      ],
+      "domain": "twitch.tv"
+    },
+    {
+      "name": "Canva",
+      "aliases": [
+        "canva"
+      ],
+      "domain": "canva.com"
+    },
+    {
+      "name": "Figma",
+      "aliases": [
+        "figma"
+      ],
+      "domain": "figma.com"
+    },
+    {
+      "name": "LinkedIn",
+      "aliases": [
+        "linkedin"
+      ],
+      "domain": "linkedin.com"
+    },
+    {
+      "name": "The New York Times",
+      "aliases": [
+        "nytimes",
+        "newyorktimes"
+      ],
+      "domain": "nytimes.com"
+    },
+    {
+      "name": "PlayStation",
+      "aliases": [
+        "playstation",
+        "psplus"
+      ],
+      "domain": "playstation.com"
+    },
+    {
+      "name": "Nintendo",
+      "aliases": [
+        "nintendo"
+      ],
+      "domain": "nintendo.com"
+    },
+    {
+      "name": "bol",
+      "aliases": [
+        "bol",
+        "bolcom",
+        "bolselect",
+        "bolplus"
+      ],
+      "domain": "bol.com",
+      "regions": [
+        "NL",
+        "BE"
+      ]
+    },
+    {
+      "name": "Videoland",
+      "aliases": [
+        "videoland"
+      ],
+      "domain": "videoland.com",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "NPO Plus",
+      "aliases": [
+        "npoplus",
+        "npo"
+      ],
+      "domain": "npoplus.nl",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "Ziggo",
+      "aliases": [
+        "ziggo"
+      ],
+      "domain": "ziggo.nl",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "KPN",
+      "aliases": [
+        "kpn"
+      ],
+      "domain": "kpn.com",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "Odido",
+      "aliases": [
+        "odido",
+        "tmobile"
+      ],
+      "domain": "odido.nl",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "Thuisbezorgd",
+      "aliases": [
+        "thuisbezorgd"
+      ],
+      "domain": "thuisbezorgd.nl",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "Albert Heijn",
+      "aliases": [
+        "albertheijn",
+        "ah"
+      ],
+      "domain": "ah.nl",
+      "regions": [
+        "NL"
+      ]
+    },
+    {
+      "name": "NS",
+      "aliases": [
+        "ns",
+        "nsflex"
+      ],
+      "domain": "ns.nl",
+      "regions": [
+        "NL"
+      ]
+    }
+  ]
+}
