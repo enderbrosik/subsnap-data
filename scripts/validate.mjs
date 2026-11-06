@@ -18,6 +18,7 @@ import { isDeepStrictEqual } from 'node:util';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const SOURCE = path.join(ROOT, 'services.json');
+export const LOCALES = path.join(ROOT, 'locales.json');
 
 export const CYCLES = ['daily', 'weekly', 'monthly', 'yearly', 'decade'];
 
@@ -232,6 +233,50 @@ export function validateData(data) {
   return errors;
 }
 
+const LOCALE_RE = /^[a-z]{2}-[a-z]{2}$/;
+
+/**
+ * Validates the parsed locales.json: a list of unique "language-country" codes in lowercase,
+ * like "en-us". Each one gets its own /<locale>/data/services.json. Returns a list of errors.
+ */
+export function validateLocales(locales) {
+  const errors = [];
+  if (!Array.isArray(locales) || locales.length === 0) {
+    return ['locales.json: must be a non-empty array of locale codes like "en-us"'];
+  }
+  const seen = new Set();
+  locales.forEach((loc, i) => {
+    if (typeof loc !== 'string' || !LOCALE_RE.test(loc)) {
+      errors.push(`locales.json[${i}]: must be a lowercase language-country code like "en-us", got ${JSON.stringify(loc)}`);
+    } else if (seen.has(loc)) {
+      errors.push(`locales.json[${i}]: "${loc}" is listed twice`);
+    } else if (loc === 'data') {
+      errors.push(`locales.json[${i}]: "data" is reserved`);
+    }
+    seen.add(loc);
+  });
+  return errors;
+}
+
+/**
+ * Builds the file for one country: the same format, with only the services recognized in that
+ * country and only the price tables that include it. Everything else is copied unchanged.
+ */
+export function filterForCountry(data, country) {
+  const services = [];
+  for (const s of data.services) {
+    if (Array.isArray(s.regions) && s.regions.length > 0 && !s.regions.includes(country)) continue;
+    const copy = { ...s };
+    if (Array.isArray(s.plans)) {
+      const groups = s.plans.filter((g) => g.regions.includes(country));
+      if (groups.length > 0) copy.plans = groups;
+      else delete copy.plans;
+    }
+    services.push(copy);
+  }
+  return { ...data, services };
+}
+
 /**
  * Reads and parses a JSON file. Returns { data } or { error }.
  */
@@ -320,6 +365,9 @@ function main() {
   }
 
   const errors = validateData(data);
+  const locales = readJson(LOCALES);
+  if (locales.error) errors.push(locales.error);
+  else errors.push(...validateLocales(locales.data));
   let message = '';
   if (errors.length === 0) {
     const result = checkVersionAgainstBase(data);
@@ -328,12 +376,13 @@ function main() {
   }
 
   if (errors.length > 0) {
-    console.error(`✗ services.json has ${errors.length} problem${errors.length === 1 ? '' : 's'}:`);
+    console.error(`✗ found ${errors.length} problem${errors.length === 1 ? '' : 's'}:`);
     for (const e of errors) console.error(`  - ${e}`);
     process.exit(1);
   }
 
   console.log(`✓ services.json is valid: ${data.services.length} services, version ${data.version}, updated ${data.updated}`);
+  console.log(`✓ locales.json is valid: ${locales.data.length} locales`);
   if (message) console.log(`  ${message}`);
 }
 

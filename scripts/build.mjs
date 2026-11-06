@@ -4,21 +4,28 @@
 //   public/data/services.json      byte-for-byte copy of services.json
 //   public/data/v1/services.json   byte-for-byte copy of services.json (permanent versioned alias)
 //   public/data/index.html         human-readable list of every service and price
+//   public/<locale>/data/services.json     the same format, only what applies to that country
+//   public/<locale>/data/v1/services.json  same bytes as above (permanent versioned alias)
 //
-// Both JSON files are written from the same bytes, so they can never differ.
+// Locales come from locales.json; "en-us" uses country US. Each pair of JSON files is written
+// from the same bytes, so the alias can never differ from its main file.
 
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { ROOT, SOURCE, readJson, validateData } from './validate.mjs';
+import { LOCALES, ROOT, SOURCE, filterForCountry, readJson, validateData, validateLocales } from './validate.mjs';
 
-const OUT = path.join(ROOT, 'public', 'data');
+const PUBLIC = path.join(ROOT, 'public');
+const OUT = path.join(PUBLIC, 'data');
 
 const { raw, data, error } = readJson(SOURCE);
 if (error) {
   console.error(`✗ ${error}`);
   process.exit(1);
 }
+const localesFile = readJson(LOCALES);
 const errors = validateData(data);
+if (localesFile.error) errors.push(localesFile.error);
+else errors.push(...validateLocales(localesFile.data));
 if (errors.length > 0) {
   console.error('✗ services.json is not valid; run `npm run validate` for details:');
   for (const e of errors) console.error(`  - ${e}`);
@@ -140,6 +147,7 @@ const html = `<!doctype html>
       <p class="meta">Version ${esc(data.version)} · updated <time datetime="${esc(data.updated)}">${esc(data.updated)}</time> · ${data.services.length} services, ${priced} with prices</p>
       <p class="notice">Prices are typical prices, copied from each service's own website for that country on the date it was checked. They change often and can differ by account, so always check the service itself.</p>
       <p class="links">Machine-readable: <a href="services.json"><code>/data/services.json</code></a> · <a href="v1/services.json"><code>/data/v1/services.json</code></a></p>
+      <p class="links">One country only: ${localesFile.data.map((l) => `<a href="/${esc(l)}/data/services.json"><code>${esc(l)}</code></a>`).join(' · ')}</p>
     </header>
 ${data.services.map(serviceHtml).join('\n')}
     <footer>
@@ -156,4 +164,14 @@ writeFileSync(path.join(OUT, 'services.json'), raw);
 writeFileSync(path.join(OUT, 'v1', 'services.json'), raw);
 writeFileSync(path.join(OUT, 'index.html'), html);
 
-console.log(`✓ built public/data/ (version ${data.version}, ${data.services.length} services)`);
+for (const locale of localesFile.data) {
+  const country = locale.slice(3).toUpperCase();
+  const dir = path.join(PUBLIC, locale, 'data');
+  const json = `${JSON.stringify(filterForCountry(data, country), null, 2)}\n`;
+  rmSync(path.join(PUBLIC, locale), { recursive: true, force: true });
+  mkdirSync(path.join(dir, 'v1'), { recursive: true });
+  writeFileSync(path.join(dir, 'services.json'), json);
+  writeFileSync(path.join(dir, 'v1', 'services.json'), json);
+}
+
+console.log(`✓ built public/data/ (version ${data.version}, ${data.services.length} services) and ${localesFile.data.length} locales`);
