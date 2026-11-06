@@ -9,13 +9,30 @@ server, no accounts, no user data and no tracking. Vercel only serves static fil
 
 | URL | What |
 |---|---|
-| `https://subsnap.pocketlantern.app/data/services.json` | The data (what the apps download) |
-| `https://subsnap.pocketlantern.app/data/v1/services.json` | The same bytes, a permanent versioned alias |
-| `https://subsnap.pocketlantern.app/data/` | Human-readable list of every service and price |
-| `https://subsnap.pocketlantern.app/` | Placeholder page (kept separate from `/data`) |
+| `https://data.subsnap.pocketlantern.app/data/services.json` | The data (what the apps download) |
+| `https://data.subsnap.pocketlantern.app/data/v1/services.json` | The same bytes, a permanent versioned alias |
+| `https://data.subsnap.pocketlantern.app/data/` | Human-readable list of every service and price |
+| `https://data.subsnap.pocketlantern.app/en-us/data/services.json` | Only what applies to one country (here the US), same format |
+| `https://data.subsnap.pocketlantern.app/en-us/data/v1/services.json` | The same bytes, a permanent versioned alias |
+| `https://data.subsnap.pocketlantern.app/` | Placeholder page (kept separate from `/data`) |
 
 These URLs must never change or break. Only additive changes to the format are allowed: new optional fields may be
 added, but existing fields are never renamed, removed or given a different meaning.
+
+## One file per country
+
+For every locale in [`locales.json`](locales.json) (like `en-us`, `nl-nl`, `fr-be`) the build writes
+`/<locale>/data/services.json` and `/<locale>/data/v1/services.json`. The country is the part after the dash, so
+`en-us` and `es-us` would get the same content. Each file has exactly the same format as `services.json`, with the same
+`version`, `updated` and `note`, but:
+
+- only services whose `regions` include that country, or that have no `regions` (recognized everywhere);
+- only the `plans` tables whose `regions` include that country (`plans` is left out when none do);
+- everything else (`manage`, `manageRegions`, ...) unchanged.
+
+To add a country, add its locale to `locales.json` (lowercase `language-country`, listed once) and open a PR. A
+locale that is not in the list returns 404, so an app should fall back to `/data/services.json` (or its bundled copy).
+Once a locale has been published, never remove it from the list: apps may depend on its address.
 
 ## Format
 
@@ -71,8 +88,11 @@ alias that is not lowercase letters/digits; a country code that is not 2 upperca
 whose host is not on the service's own domain or another service's domain in the file; and a `version` that is not
 higher than on the main branch when the content changed.
 
-`npm run build` writes `public/data/` (both JSON copies and the HTML page) from `services.json`. That folder is
-generated and not committed.
+`npm run validate` also checks `locales.json`: every entry must be a lowercase `language-country` code like `en-us`,
+listed once.
+
+`npm run build` writes `public/data/` (both JSON copies and the HTML page) and one `public/<locale>/data/` folder per
+locale from `services.json` and `locales.json`. These folders are generated and not committed.
 
 ## Contributing
 
@@ -104,7 +124,7 @@ Insights for this project.
 
    | Type | Name | Value |
    |---|---|---|
-   | `CNAME` | `subsnap` | `cname.vercel-dns.com` |
+   | `CNAME` | `data.subsnap` | `cname.vercel-dns.com` |
 
    If Vercel's Domains page shows a different, project-specific CNAME value, use that one instead.
 5. **Check DNS:**
@@ -119,27 +139,27 @@ Insights for this project.
 6. **Check the live files:**
 
    ```bash
-   curl -sS -o /dev/null -w '%{http_code}\n' https://subsnap.pocketlantern.app/data/services.json
+   curl -sS -o /dev/null -w '%{http_code}\n' https://data.subsnap.pocketlantern.app/data/services.json
    ```
 
    ```bash
-   curl -sS -o /dev/null -w '%{http_code}\n' https://subsnap.pocketlantern.app/data/v1/services.json
+   curl -sS -o /dev/null -w '%{http_code}\n' https://data.subsnap.pocketlantern.app/data/v1/services.json
    ```
 
    ```bash
-   curl -sS https://subsnap.pocketlantern.app/data/services.json | python3 -m json.tool > /dev/null && echo valid JSON
+   curl -sS https://data.subsnap.pocketlantern.app/data/services.json | python3 -m json.tool > /dev/null && echo valid JSON
    ```
 
    ```bash
-   curl -sS https://subsnap.pocketlantern.app/data/v1/services.json | python3 -m json.tool > /dev/null && echo valid JSON
+   curl -sS https://data.subsnap.pocketlantern.app/data/v1/services.json | python3 -m json.tool > /dev/null && echo valid JSON
    ```
 
    ```bash
-   curl -sSI https://subsnap.pocketlantern.app/data/services.json | grep -iE '^(HTTP|content-type|cache-control|access-control-allow-origin)'
+   curl -sSI https://data.subsnap.pocketlantern.app/data/services.json | grep -iE '^(HTTP|content-type|cache-control|access-control-allow-origin)'
    ```
 
    ```bash
-   curl -sSI https://subsnap.pocketlantern.app/data/v1/services.json | grep -iE '^(HTTP|content-type|cache-control|access-control-allow-origin)'
+   curl -sSI https://data.subsnap.pocketlantern.app/data/v1/services.json | grep -iE '^(HTTP|content-type|cache-control|access-control-allow-origin)'
    ```
 
    Expect `200`, `valid JSON`, and the three headers listed under *How deploys work*.
