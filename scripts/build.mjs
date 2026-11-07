@@ -13,6 +13,7 @@
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { LOCALES, ROOT, SOURCE, filterForCountry, readJson, validateData, validateLocales } from './validate.mjs';
+import { readBrandFiles } from './brands.mjs';
 
 const PUBLIC = path.join(ROOT, 'public');
 const OUT = path.join(PUBLIC, 'data');
@@ -163,6 +164,21 @@ mkdirSync(path.join(OUT, 'v1'), { recursive: true });
 writeFileSync(path.join(OUT, 'services.json'), raw);
 writeFileSync(path.join(OUT, 'v1', 'services.json'), raw);
 writeFileSync(path.join(OUT, 'index.html'), html);
+
+// The brand list and recognition model, when present (see scripts/brands.mjs). Same bytes in the versioned alias.
+let brandFiles;
+try {
+  brandFiles = readBrandFiles();
+} catch (e) {
+  console.error(`✗ ${e.message}`);
+  process.exit(1);
+}
+if (brandFiles) {
+  for (const dir of [OUT, path.join(OUT, 'v1')]) {
+    writeFileSync(path.join(dir, 'brands.json'), brandFiles.rawBrands);
+    writeFileSync(path.join(dir, 'brand-model.json'), brandFiles.rawModel);
+  }
+}
 
 for (const locale of localesFile.data) {
   const country = locale.slice(3).toUpperCase();

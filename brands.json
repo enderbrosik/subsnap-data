@@ -1,0 +1,2257 @@
+{
+ "version": 1,
+ "updated": "2026-11-07",
+ "note": "Popular subscription brands, used to recognize names on bank statements. Built from brands.tsv by scripts/build-brands.py.",
+ "brands": [
+  {
+   "name": "Netflix",
+   "domain": "netflix.com",
+   "category": "entertainment",
+   "aliases": [
+    "netflix",
+    "nflx"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Disney+",
+   "domain": "disneyplus.com",
+   "category": "entertainment",
+   "aliases": [
+    "disney",
+    "disneyplus",
+    "dplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Hulu",
+   "domain": "hulu.com",
+   "category": "entertainment",
+   "aliases": [
+    "hulu"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Max",
+   "domain": "max.com",
+   "category": "entertainment",
+   "aliases": [
+    "max",
+    "hbomax"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Prime Video",
+   "domain": "primevideo.com",
+   "category": "entertainment",
+   "aliases": [
+    "primevideo",
+    "amazonprimevideo",
+    "amznprimevideo"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Amazon Prime",
+   "domain": "amazon.com",
+   "category": "other",
+   "aliases": [
+    "amazonprime",
+    "amznprime",
+    "primemembership",
+    "amazonprimemembership",
+    "amazon"
+   ],
+   "exact": false
+  },
+  {
+   "name": "YouTube",
+   "domain": "youtube.com",
+   "category": "entertainment",
+   "aliases": [
+    "youtube",
+    "youtubepremium",
+    "googleyoutube",
+    "ytpremium",
+    "youtubemusic"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Apple TV+",
+   "domain": "tv.apple.com",
+   "category": "entertainment",
+   "aliases": [
+    "appletv",
+    "tv"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Paramount+",
+   "domain": "paramountplus.com",
+   "category": "entertainment",
+   "aliases": [
+    "paramount",
+    "paramountplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Peacock",
+   "domain": "peacocktv.com",
+   "category": "entertainment",
+   "aliases": [
+    "peacock",
+    "peacocktv"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Crunchyroll",
+   "domain": "crunchyroll.com",
+   "category": "entertainment",
+   "aliases": [
+    "crunchyroll"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Videoland",
+   "domain": "videoland.com",
+   "category": "entertainment",
+   "aliases": [
+    "videoland"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Viaplay",
+   "domain": "viaplay.com",
+   "category": "entertainment",
+   "aliases": [
+    "viaplay"
+   ],
+   "exact": false
+  },
+  {
+   "name": "SkyShowtime",
+   "domain": "skyshowtime.com",
+   "category": "entertainment",
+   "aliases": [
+    "skyshowtime"
+   ],
+   "exact": false
+  },
+  {
+   "name": "DAZN",
+   "domain": "dazn.com",
+   "category": "entertainment",
+   "aliases": [
+    "dazn"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Discovery+",
+   "domain": "discoveryplus.com",
+   "category": "entertainment",
+   "aliases": [
+    "discovery",
+    "discoveryplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "MUBI",
+   "domain": "mubi.com",
+   "category": "entertainment",
+   "aliases": [
+    "mubi"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Twitch",
+   "domain": "twitch.tv",
+   "category": "entertainment",
+   "aliases": [
+    "twitch"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Canal+",
+   "domain": "canalplus.com",
+   "category": "entertainment",
+   "aliases": [
+    "canal",
+    "canalplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "RTL+",
+   "domain": "rtl.de",
+   "category": "entertainment",
+   "aliases": [
+    "rtl",
+    "rtlplus"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Joyn",
+   "domain": "joyn.de",
+   "category": "entertainment",
+   "aliases": [
+    "joyn"
+   ],
+   "exact": false
+  },
+  {
+   "name": "WOW",
+   "domain": "wowtv.de",
+   "category": "entertainment",
+   "aliases": [
+    "wow",
+    "skywow",
+    "wowtv"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Sky",
+   "domain": "sky.com",
+   "category": "entertainment",
+   "aliases": [
+    "sky",
+    "skyuk",
+    "skydigital"
+   ],
+   "exact": true
+  },
+  {
+   "name": "NOW",
+   "domain": "nowtv.com",
+   "category": "entertainment",
+   "aliases": [
+    "now",
+    "nowtv"
+   ],
+   "exact": true
+  },
+  {
+   "name": "ITVX",
+   "domain": "itv.com",
+   "category": "entertainment",
+   "aliases": [
+    "itvx",
+    "itv"
+   ],
+   "exact": false
+  },
+  {
+   "name": "BritBox",
+   "domain": "britbox.com",
+   "category": "entertainment",
+   "aliases": [
+    "britbox"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Plex",
+   "domain": "plex.tv",
+   "category": "entertainment",
+   "aliases": [
+    "plex"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Starz",
+   "domain": "starz.com",
+   "category": "entertainment",
+   "aliases": [
+    "starz"
+   ],
+   "exact": false
+  },
+  {
+   "name": "AMC+",
+   "domain": "amcplus.com",
+   "category": "entertainment",
+   "aliases": [
+    "amc",
+    "amcplus"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Showtime",
+   "domain": "sho.com",
+   "category": "entertainment",
+   "aliases": [
+    "showtime",
+    "sho"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Fubo",
+   "domain": "fubo.tv",
+   "category": "entertainment",
+   "aliases": [
+    "fubo",
+    "fubotv"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Sling TV",
+   "domain": "sling.com",
+   "category": "entertainment",
+   "aliases": [
+    "slingtv",
+    "sling"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Philo",
+   "domain": "philo.com",
+   "category": "entertainment",
+   "aliases": [
+    "philo"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Spotify",
+   "domain": "spotify.com",
+   "category": "music",
+   "aliases": [
+    "spotify",
+    "sptfy",
+    "spotifyab",
+    "spotifypremium"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Apple Music",
+   "domain": "music.apple.com",
+   "category": "music",
+   "aliases": [
+    "applemusic",
+    "music"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Deezer",
+   "domain": "deezer.com",
+   "category": "music",
+   "aliases": [
+    "deezer"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Tidal",
+   "domain": "tidal.com",
+   "category": "music",
+   "aliases": [
+    "tidal"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Amazon Music",
+   "domain": "music.amazon.com",
+   "category": "music",
+   "aliases": [
+    "amazonmusic",
+    "amazonmusicunlimited",
+    "amznmusic",
+    "music"
+   ],
+   "exact": false
+  },
+  {
+   "name": "SoundCloud",
+   "domain": "soundcloud.com",
+   "category": "music",
+   "aliases": [
+    "soundcloud"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Qobuz",
+   "domain": "qobuz.com",
+   "category": "music",
+   "aliases": [
+    "qobuz"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Pandora",
+   "domain": "pandora.com",
+   "category": "music",
+   "aliases": [
+    "pandora"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Napster",
+   "domain": "napster.com",
+   "category": "music",
+   "aliases": [
+    "napster"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Audible",
+   "domain": "audible.com",
+   "category": "music",
+   "aliases": [
+    "audible",
+    "audibleuk",
+    "audiblegmbh"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Storytel",
+   "domain": "storytel.com",
+   "category": "music",
+   "aliases": [
+    "storytel"
+   ],
+   "exact": false
+  },
+  {
+   "name": "BookBeat",
+   "domain": "bookbeat.com",
+   "category": "music",
+   "aliases": [
+    "bookbeat"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Scribd",
+   "domain": "scribd.com",
+   "category": "music",
+   "aliases": [
+    "scribd",
+    "everand"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Kindle Unlimited",
+   "domain": "amazon.com",
+   "category": "other",
+   "aliases": [
+    "kindleunlimited",
+    "amazon"
+   ],
+   "exact": false
+  },
+  {
+   "name": "iCloud+",
+   "domain": "icloud.com",
+   "category": "cloud",
+   "aliases": [
+    "icloud",
+    "appleicloud",
+    "icloudstorage",
+    "applecombillicloud"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Google One",
+   "domain": "one.google.com",
+   "category": "cloud",
+   "aliases": [
+    "googleone",
+    "googlestorage",
+    "one"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Dropbox",
+   "domain": "dropbox.com",
+   "category": "cloud",
+   "aliases": [
+    "dropbox",
+    "dropboxinc"
+   ],
+   "exact": false
+  },
+  {
+   "name": "OneDrive",
+   "domain": "onedrive.com",
+   "category": "cloud",
+   "aliases": [
+    "onedrive",
+    "microsoftonedrive"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Microsoft 365",
+   "domain": "microsoft.com",
+   "category": "productivity",
+   "aliases": [
+    "microsoft365",
+    "office365",
+    "msft",
+    "microsoftoffice",
+    "microsoft365family",
+    "microsoft"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Box",
+   "domain": "box.com",
+   "category": "cloud",
+   "aliases": [
+    "box"
+   ],
+   "exact": true
+  },
+  {
+   "name": "pCloud",
+   "domain": "pcloud.com",
+   "category": "cloud",
+   "aliases": [
+    "pcloud"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Proton",
+   "domain": "proton.me",
+   "category": "cloud",
+   "aliases": [
+    "proton",
+    "protonmail",
+    "protonvpn",
+    "protonag"
+   ],
+   "exact": true
+  },
+  {
+   "name": "NordVPN",
+   "domain": "nordvpn.com",
+   "category": "cloud",
+   "aliases": [
+    "nordvpn",
+    "nordsecurity"
+   ],
+   "exact": false
+  },
+  {
+   "name": "ExpressVPN",
+   "domain": "expressvpn.com",
+   "category": "cloud",
+   "aliases": [
+    "expressvpn"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Surfshark",
+   "domain": "surfshark.com",
+   "category": "cloud",
+   "aliases": [
+    "surfshark"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Mullvad",
+   "domain": "mullvad.net",
+   "category": "cloud",
+   "aliases": [
+    "mullvad"
+   ],
+   "exact": false
+  },
+  {
+   "name": "IPVanish",
+   "domain": "ipvanish.com",
+   "category": "cloud",
+   "aliases": [
+    "ipvanish"
+   ],
+   "exact": false
+  },
+  {
+   "name": "1Password",
+   "domain": "1password.com",
+   "category": "cloud",
+   "aliases": [
+    "1password",
+    "agilebits"
+   ],
+   "exact": false
+  },
+  {
+   "name": "LastPass",
+   "domain": "lastpass.com",
+   "category": "cloud",
+   "aliases": [
+    "lastpass"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Dashlane",
+   "domain": "dashlane.com",
+   "category": "cloud",
+   "aliases": [
+    "dashlane"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Bitwarden",
+   "domain": "bitwarden.com",
+   "category": "cloud",
+   "aliases": [
+    "bitwarden"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Backblaze",
+   "domain": "backblaze.com",
+   "category": "cloud",
+   "aliases": [
+    "backblaze"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Cloudflare",
+   "domain": "cloudflare.com",
+   "category": "cloud",
+   "aliases": [
+    "cloudflare"
+   ],
+   "exact": false
+  },
+  {
+   "name": "DigitalOcean",
+   "domain": "digitalocean.com",
+   "category": "cloud",
+   "aliases": [
+    "digitalocean"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Amazon Web Services",
+   "domain": "aws.amazon.com",
+   "category": "cloud",
+   "aliases": [
+    "amazonwebservices",
+    "aws",
+    "amazonwebservicesemea"
+   ],
+   "exact": false
+  },
+  {
+   "name": "GitHub",
+   "domain": "github.com",
+   "category": "cloud",
+   "aliases": [
+    "github",
+    "githubinc"
+   ],
+   "exact": false
+  },
+  {
+   "name": "GitLab",
+   "domain": "gitlab.com",
+   "category": "cloud",
+   "aliases": [
+    "gitlab"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Vercel",
+   "domain": "vercel.com",
+   "category": "cloud",
+   "aliases": [
+    "vercel"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Netlify",
+   "domain": "netlify.com",
+   "category": "cloud",
+   "aliases": [
+    "netlify"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Namecheap",
+   "domain": "namecheap.com",
+   "category": "cloud",
+   "aliases": [
+    "namecheap"
+   ],
+   "exact": false
+  },
+  {
+   "name": "GoDaddy",
+   "domain": "godaddy.com",
+   "category": "cloud",
+   "aliases": [
+    "godaddy"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Squarespace",
+   "domain": "squarespace.com",
+   "category": "cloud",
+   "aliases": [
+    "squarespace"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Wix",
+   "domain": "wix.com",
+   "category": "cloud",
+   "aliases": [
+    "wix"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Shopify",
+   "domain": "shopify.com",
+   "category": "cloud",
+   "aliases": [
+    "shopify"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Google Workspace",
+   "domain": "workspace.google.com",
+   "category": "productivity",
+   "aliases": [
+    "googleworkspace",
+    "gsuite",
+    "workspace"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Zoom",
+   "domain": "zoom.us",
+   "category": "productivity",
+   "aliases": [
+    "zoom",
+    "zoomvideo"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Slack",
+   "domain": "slack.com",
+   "category": "productivity",
+   "aliases": [
+    "slack",
+    "slacktechnologies"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Notion",
+   "domain": "notion.so",
+   "category": "productivity",
+   "aliases": [
+    "notion",
+    "notionlabs"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Adobe",
+   "domain": "adobe.com",
+   "category": "productivity",
+   "aliases": [
+    "adobe",
+    "adobesystems",
+    "adobecreativecloud",
+    "adobeinc",
+    "adbe"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Canva",
+   "domain": "canva.com",
+   "category": "productivity",
+   "aliases": [
+    "canva"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Figma",
+   "domain": "figma.com",
+   "category": "productivity",
+   "aliases": [
+    "figma"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Evernote",
+   "domain": "evernote.com",
+   "category": "productivity",
+   "aliases": [
+    "evernote"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Todoist",
+   "domain": "todoist.com",
+   "category": "productivity",
+   "aliases": [
+    "todoist",
+    "doist"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Trello",
+   "domain": "trello.com",
+   "category": "productivity",
+   "aliases": [
+    "trello"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Asana",
+   "domain": "asana.com",
+   "category": "productivity",
+   "aliases": [
+    "asana"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Atlassian",
+   "domain": "atlassian.com",
+   "category": "productivity",
+   "aliases": [
+    "atlassian",
+    "jira",
+    "confluence"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Grammarly",
+   "domain": "grammarly.com",
+   "category": "productivity",
+   "aliases": [
+    "grammarly"
+   ],
+   "exact": false
+  },
+  {
+   "name": "ChatGPT",
+   "domain": "openai.com",
+   "category": "productivity",
+   "aliases": [
+    "chatgpt",
+    "openai",
+    "chatgptsubscription",
+    "openaillc"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Claude",
+   "domain": "anthropic.com",
+   "category": "productivity",
+   "aliases": [
+    "claude",
+    "anthropic",
+    "claudeai"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Midjourney",
+   "domain": "midjourney.com",
+   "category": "productivity",
+   "aliases": [
+    "midjourney"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Perplexity",
+   "domain": "perplexity.ai",
+   "category": "productivity",
+   "aliases": [
+    "perplexity"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Cursor",
+   "domain": "cursor.com",
+   "category": "productivity",
+   "aliases": [
+    "cursor",
+    "anysphere"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Raycast",
+   "domain": "raycast.com",
+   "category": "productivity",
+   "aliases": [
+    "raycast"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Setapp",
+   "domain": "setapp.com",
+   "category": "productivity",
+   "aliases": [
+    "setapp",
+    "macpaw"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Miro",
+   "domain": "miro.com",
+   "category": "productivity",
+   "aliases": [
+    "miro"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Linear",
+   "domain": "linear.app",
+   "category": "productivity",
+   "aliases": [
+    "linear"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Obsidian",
+   "domain": "obsidian.md",
+   "category": "productivity",
+   "aliases": [
+    "obsidian"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Airtable",
+   "domain": "airtable.com",
+   "category": "productivity",
+   "aliases": [
+    "airtable"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Zapier",
+   "domain": "zapier.com",
+   "category": "productivity",
+   "aliases": [
+    "zapier"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Mailchimp",
+   "domain": "mailchimp.com",
+   "category": "productivity",
+   "aliases": [
+    "mailchimp"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Calendly",
+   "domain": "calendly.com",
+   "category": "productivity",
+   "aliases": [
+    "calendly"
+   ],
+   "exact": false
+  },
+  {
+   "name": "DocuSign",
+   "domain": "docusign.com",
+   "category": "productivity",
+   "aliases": [
+    "docusign"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Duolingo",
+   "domain": "duolingo.com",
+   "category": "other",
+   "aliases": [
+    "duolingo",
+    "duolingoplus",
+    "superduolingo"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Babbel",
+   "domain": "babbel.com",
+   "category": "other",
+   "aliases": [
+    "babbel"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Coursera",
+   "domain": "coursera.org",
+   "category": "other",
+   "aliases": [
+    "coursera"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Udemy",
+   "domain": "udemy.com",
+   "category": "other",
+   "aliases": [
+    "udemy"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Skillshare",
+   "domain": "skillshare.com",
+   "category": "other",
+   "aliases": [
+    "skillshare"
+   ],
+   "exact": false
+  },
+  {
+   "name": "MasterClass",
+   "domain": "masterclass.com",
+   "category": "other",
+   "aliases": [
+    "masterclass"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Brilliant",
+   "domain": "brilliant.org",
+   "category": "other",
+   "aliases": [
+    "brilliant"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Patreon",
+   "domain": "patreon.com",
+   "category": "other",
+   "aliases": [
+    "patreon"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Medium",
+   "domain": "medium.com",
+   "category": "news",
+   "aliases": [
+    "medium",
+    "mediummonthly"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Substack",
+   "domain": "substack.com",
+   "category": "news",
+   "aliases": [
+    "substack"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Headspace",
+   "domain": "headspace.com",
+   "category": "fitness",
+   "aliases": [
+    "headspace"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Calm",
+   "domain": "calm.com",
+   "category": "fitness",
+   "aliases": [
+    "calm"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Strava",
+   "domain": "strava.com",
+   "category": "fitness",
+   "aliases": [
+    "strava"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Peloton",
+   "domain": "onepeloton.com",
+   "category": "fitness",
+   "aliases": [
+    "peloton",
+    "pelotoninteractive",
+    "onepeloton"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Fitbit",
+   "domain": "fitbit.com",
+   "category": "fitness",
+   "aliases": [
+    "fitbit",
+    "fitbitpremium"
+   ],
+   "exact": false
+  },
+  {
+   "name": "MyFitnessPal",
+   "domain": "myfitnesspal.com",
+   "category": "fitness",
+   "aliases": [
+    "myfitnesspal"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Basic-Fit",
+   "domain": "basic-fit.com",
+   "category": "fitness",
+   "aliases": [
+    "basicfit",
+    "basicfitnederland"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Planet Fitness",
+   "domain": "planetfitness.com",
+   "category": "fitness",
+   "aliases": [
+    "planetfitness",
+    "planetfit"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Anytime Fitness",
+   "domain": "anytimefitness.com",
+   "category": "fitness",
+   "aliases": [
+    "anytimefitness"
+   ],
+   "exact": false
+  },
+  {
+   "name": "PureGym",
+   "domain": "puregym.com",
+   "category": "fitness",
+   "aliases": [
+    "puregym"
+   ],
+   "exact": false
+  },
+  {
+   "name": "David Lloyd",
+   "domain": "davidlloyd.co.uk",
+   "category": "fitness",
+   "aliases": [
+    "davidlloyd",
+    "davidlloydclubs"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Fitness First",
+   "domain": "fitnessfirst.com",
+   "category": "fitness",
+   "aliases": [
+    "fitnessfirst"
+   ],
+   "exact": false
+  },
+  {
+   "name": "McFit",
+   "domain": "mcfit.com",
+   "category": "fitness",
+   "aliases": [
+    "mcfit"
+   ],
+   "exact": false
+  },
+  {
+   "name": "FitX",
+   "domain": "fitx.de",
+   "category": "fitness",
+   "aliases": [
+    "fitx"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Urban Sports Club",
+   "domain": "urbansportsclub.com",
+   "category": "fitness",
+   "aliases": [
+    "urbansportsclub",
+    "urbansports"
+   ],
+   "exact": false
+  },
+  {
+   "name": "ClassPass",
+   "domain": "classpass.com",
+   "category": "fitness",
+   "aliases": [
+    "classpass"
+   ],
+   "exact": false
+  },
+  {
+   "name": "WW",
+   "domain": "ww.com",
+   "category": "fitness",
+   "aliases": [
+    "ww",
+    "weightwatchers"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Noom",
+   "domain": "noom.com",
+   "category": "fitness",
+   "aliases": [
+    "noom"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Freeletics",
+   "domain": "freeletics.com",
+   "category": "fitness",
+   "aliases": [
+    "freeletics"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Zwift",
+   "domain": "zwift.com",
+   "category": "fitness",
+   "aliases": [
+    "zwift"
+   ],
+   "exact": false
+  },
+  {
+   "name": "AllTrails",
+   "domain": "alltrails.com",
+   "category": "fitness",
+   "aliases": [
+    "alltrails"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Whoop",
+   "domain": "whoop.com",
+   "category": "fitness",
+   "aliases": [
+    "whoop"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Oura",
+   "domain": "ouraring.com",
+   "category": "fitness",
+   "aliases": [
+    "oura",
+    "ouraring"
+   ],
+   "exact": true
+  },
+  {
+   "name": "The New York Times",
+   "domain": "nytimes.com",
+   "category": "news",
+   "aliases": [
+    "thenewyorktimes",
+    "nyt",
+    "nytimes",
+    "newyorktimes",
+    "nytimesdigital"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Washington Post",
+   "domain": "washingtonpost.com",
+   "category": "news",
+   "aliases": [
+    "thewashingtonpost",
+    "wapo",
+    "washingtonpost"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Wall Street Journal",
+   "domain": "wsj.com",
+   "category": "news",
+   "aliases": [
+    "thewallstreetjournal",
+    "wallstreetjournal",
+    "dowjones",
+    "wsj"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Guardian",
+   "domain": "theguardian.com",
+   "category": "news",
+   "aliases": [
+    "theguardian",
+    "guardiannews"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Economist",
+   "domain": "economist.com",
+   "category": "news",
+   "aliases": [
+    "theeconomist",
+    "economistnewspaper",
+    "economist"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Financial Times",
+   "domain": "ft.com",
+   "category": "news",
+   "aliases": [
+    "financialtimes",
+    "ftcom",
+    "financialtimesltd",
+    "ft"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Times",
+   "domain": "thetimes.co.uk",
+   "category": "news",
+   "aliases": [
+    "thetimes",
+    "timesnewspapers",
+    "thetimesandsundaytimes"
+   ],
+   "exact": false
+  },
+  {
+   "name": "The Telegraph",
+   "domain": "telegraph.co.uk",
+   "category": "news",
+   "aliases": [
+    "thetelegraph",
+    "telegraphmedia",
+    "telegraph"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Bloomberg",
+   "domain": "bloomberg.com",
+   "category": "news",
+   "aliases": [
+    "bloomberg"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Der Spiegel",
+   "domain": "spiegel.de",
+   "category": "news",
+   "aliases": [
+    "derspiegel",
+    "spiegelplus",
+    "spiegel"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Die Zeit",
+   "domain": "zeit.de",
+   "category": "news",
+   "aliases": [
+    "diezeit",
+    "zeitonline",
+    "zeitverlag",
+    "zeit"
+   ],
+   "exact": false
+  },
+  {
+   "name": "FAZ",
+   "domain": "faz.net",
+   "category": "news",
+   "aliases": [
+    "faz",
+    "frankfurterallgemeine"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Le Monde",
+   "domain": "lemonde.fr",
+   "category": "news",
+   "aliases": [
+    "lemonde"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Le Figaro",
+   "domain": "lefigaro.fr",
+   "category": "news",
+   "aliases": [
+    "lefigaro"
+   ],
+   "exact": false
+  },
+  {
+   "name": "El País",
+   "domain": "elpais.com",
+   "category": "news",
+   "aliases": [
+    "elpais"
+   ],
+   "exact": false
+  },
+  {
+   "name": "La Repubblica",
+   "domain": "repubblica.it",
+   "category": "news",
+   "aliases": [
+    "larepubblica",
+    "repubblica"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Corriere della Sera",
+   "domain": "corriere.it",
+   "category": "news",
+   "aliases": [
+    "corrieredellasera",
+    "corriere"
+   ],
+   "exact": false
+  },
+  {
+   "name": "NRC",
+   "domain": "nrc.nl",
+   "category": "news",
+   "aliases": [
+    "nrc",
+    "nrchandelsblad"
+   ],
+   "exact": true
+  },
+  {
+   "name": "de Volkskrant",
+   "domain": "volkskrant.nl",
+   "category": "news",
+   "aliases": [
+    "devolkskrant",
+    "volkskrant"
+   ],
+   "exact": false
+  },
+  {
+   "name": "De Telegraaf",
+   "domain": "telegraaf.nl",
+   "category": "news",
+   "aliases": [
+    "detelegraaf",
+    "telegraaf"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Het Financieele Dagblad",
+   "domain": "fd.nl",
+   "category": "news",
+   "aliases": [
+    "hetfinancieeledagblad",
+    "fd"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Helsingin Sanomat",
+   "domain": "hs.fi",
+   "category": "news",
+   "aliases": [
+    "helsinginsanomat",
+    "hsfi",
+    "sanoma",
+    "hs"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Apple News+",
+   "domain": "apple.com",
+   "category": "news",
+   "aliases": [
+    "applenews",
+    "apple"
+   ],
+   "exact": false
+  },
+  {
+   "name": "PlayStation",
+   "domain": "playstation.com",
+   "category": "entertainment",
+   "aliases": [
+    "playstation",
+    "playstationplus",
+    "psplus",
+    "sonyinteractive",
+    "psn"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Xbox",
+   "domain": "xbox.com",
+   "category": "entertainment",
+   "aliases": [
+    "xbox",
+    "xboxgamepass",
+    "gamepass",
+    "microsoftxbox"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Nintendo",
+   "domain": "nintendo.com",
+   "category": "entertainment",
+   "aliases": [
+    "nintendo",
+    "nintendoswitchonline",
+    "nintendoeshop"
+   ],
+   "exact": false
+  },
+  {
+   "name": "EA Play",
+   "domain": "ea.com",
+   "category": "entertainment",
+   "aliases": [
+    "eaplay",
+    "electronicarts",
+    "ea"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Ubisoft",
+   "domain": "ubisoft.com",
+   "category": "entertainment",
+   "aliases": [
+    "ubisoft",
+    "ubisoftplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Steam",
+   "domain": "steampowered.com",
+   "category": "entertainment",
+   "aliases": [
+    "steam",
+    "steamgames",
+    "valve",
+    "steampowered"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Discord",
+   "domain": "discord.com",
+   "category": "entertainment",
+   "aliases": [
+    "discord",
+    "discordnitro"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Roblox",
+   "domain": "roblox.com",
+   "category": "entertainment",
+   "aliases": [
+    "roblox"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Minecraft",
+   "domain": "minecraft.net",
+   "category": "entertainment",
+   "aliases": [
+    "minecraft",
+    "mojang"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Blizzard",
+   "domain": "blizzard.com",
+   "category": "entertainment",
+   "aliases": [
+    "blizzard",
+    "battlenet",
+    "blizzardentertainment"
+   ],
+   "exact": true
+  },
+  {
+   "name": "GeForce Now",
+   "domain": "nvidia.com",
+   "category": "entertainment",
+   "aliases": [
+    "geforcenow",
+    "nvidia"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Humble Bundle",
+   "domain": "humblebundle.com",
+   "category": "entertainment",
+   "aliases": [
+    "humblebundle",
+    "humblechoice"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Apple Arcade",
+   "domain": "apple.com",
+   "category": "entertainment",
+   "aliases": [
+    "applearcade",
+    "apple"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Ziggo",
+   "domain": "ziggo.nl",
+   "category": "other",
+   "aliases": [
+    "ziggo",
+    "ziggobv"
+   ],
+   "exact": false
+  },
+  {
+   "name": "KPN",
+   "domain": "kpn.com",
+   "category": "other",
+   "aliases": [
+    "kpn",
+    "koninklijkekpn"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Odido",
+   "domain": "odido.nl",
+   "category": "other",
+   "aliases": [
+    "odido",
+    "tmobilenetherlands"
+   ],
+   "exact": false
+  },
+  {
+   "name": "T-Mobile",
+   "domain": "t-mobile.com",
+   "category": "other",
+   "aliases": [
+    "tmobile"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Vodafone",
+   "domain": "vodafone.com",
+   "category": "other",
+   "aliases": [
+    "vodafone",
+    "vodafonegroup",
+    "vodafoneziggo"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Orange",
+   "domain": "orange.fr",
+   "category": "other",
+   "aliases": [
+    "orange",
+    "orangesa"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Telekom",
+   "domain": "telekom.de",
+   "category": "other",
+   "aliases": [
+    "telekom",
+    "deutschetelekom"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Proximus",
+   "domain": "proximus.be",
+   "category": "other",
+   "aliases": [
+    "proximus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Telenet",
+   "domain": "telenet.be",
+   "category": "other",
+   "aliases": [
+    "telenet"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Movistar",
+   "domain": "movistar.es",
+   "category": "other",
+   "aliases": [
+    "movistar",
+    "telefonica"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Swisscom",
+   "domain": "swisscom.ch",
+   "category": "other",
+   "aliases": [
+    "swisscom"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Telia",
+   "domain": "telia.fi",
+   "category": "other",
+   "aliases": [
+    "telia",
+    "teliafinland"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Elisa",
+   "domain": "elisa.fi",
+   "category": "other",
+   "aliases": [
+    "elisa",
+    "elisaoyj"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Verizon",
+   "domain": "verizon.com",
+   "category": "other",
+   "aliases": [
+    "verizon"
+   ],
+   "exact": false
+  },
+  {
+   "name": "AT&T",
+   "domain": "att.com",
+   "category": "other",
+   "aliases": [
+    "att",
+    "attmobility"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Xfinity",
+   "domain": "xfinity.com",
+   "category": "other",
+   "aliases": [
+    "xfinity",
+    "comcast"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Spectrum",
+   "domain": "spectrum.com",
+   "category": "other",
+   "aliases": [
+    "spectrum",
+    "chartercommunications"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Virgin Media",
+   "domain": "virginmedia.com",
+   "category": "other",
+   "aliases": [
+    "virginmedia",
+    "virginmediao2"
+   ],
+   "exact": false
+  },
+  {
+   "name": "BT",
+   "domain": "bt.com",
+   "category": "other",
+   "aliases": [
+    "bt",
+    "britishtelecom"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Uber",
+   "domain": "uber.com",
+   "category": "other",
+   "aliases": [
+    "uber",
+    "uberone",
+    "uberbv",
+    "ubertrip"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Deliveroo",
+   "domain": "deliveroo.com",
+   "category": "other",
+   "aliases": [
+    "deliveroo"
+   ],
+   "exact": false
+  },
+  {
+   "name": "HelloFresh",
+   "domain": "hellofresh.com",
+   "category": "other",
+   "aliases": [
+    "hellofresh"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Picnic",
+   "domain": "picnic.app",
+   "category": "other",
+   "aliases": [
+    "picnic",
+    "picnicsupermarkt"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Thuisbezorgd",
+   "domain": "thuisbezorgd.nl",
+   "category": "other",
+   "aliases": [
+    "thuisbezorgd",
+    "takeawaycom",
+    "justeattakeaway"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Instacart",
+   "domain": "instacart.com",
+   "category": "other",
+   "aliases": [
+    "instacart"
+   ],
+   "exact": false
+  },
+  {
+   "name": "DoorDash",
+   "domain": "doordash.com",
+   "category": "other",
+   "aliases": [
+    "doordash",
+    "dashpass"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Costco",
+   "domain": "costco.com",
+   "category": "other",
+   "aliases": [
+    "costco",
+    "costcowholesale"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Walmart+",
+   "domain": "walmart.com",
+   "category": "other",
+   "aliases": [
+    "walmart",
+    "walmartplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Zalando",
+   "domain": "zalando.com",
+   "category": "other",
+   "aliases": [
+    "zalando",
+    "zalandoplus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Too Good To Go",
+   "domain": "toogoodtogo.com",
+   "category": "other",
+   "aliases": [
+    "toogoodtogo"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Klarna",
+   "domain": "klarna.com",
+   "category": "other",
+   "aliases": [
+    "klarna"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Revolut",
+   "domain": "revolut.com",
+   "category": "other",
+   "aliases": [
+    "revolut"
+   ],
+   "exact": false
+  },
+  {
+   "name": "N26",
+   "domain": "n26.com",
+   "category": "other",
+   "aliases": [
+    "n26",
+    "n26gmbh"
+   ],
+   "exact": true
+  },
+  {
+   "name": "PayPal",
+   "domain": "paypal.com",
+   "category": "other",
+   "aliases": [
+    "paypal"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Tinder",
+   "domain": "tinder.com",
+   "category": "other",
+   "aliases": [
+    "tinder",
+    "matchgroup"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Bumble",
+   "domain": "bumble.com",
+   "category": "other",
+   "aliases": [
+    "bumble"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Hinge",
+   "domain": "hinge.co",
+   "category": "other",
+   "aliases": [
+    "hinge"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Match",
+   "domain": "match.com",
+   "category": "other",
+   "aliases": [
+    "match",
+    "matchcom"
+   ],
+   "exact": true
+  },
+  {
+   "name": "LinkedIn",
+   "domain": "linkedin.com",
+   "category": "productivity",
+   "aliases": [
+    "linkedin",
+    "linkedinpremium"
+   ],
+   "exact": false
+  },
+  {
+   "name": "bol",
+   "domain": "bol.com",
+   "category": "other",
+   "aliases": [
+    "bol",
+    "bolcomplus",
+    "bolplus",
+    "bolcom"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Albert Heijn",
+   "domain": "ah.nl",
+   "category": "other",
+   "aliases": [
+    "albertheijn",
+    "ah",
+    "albertheijnbv"
+   ],
+   "exact": false
+  },
+  {
+   "name": "NS",
+   "domain": "ns.nl",
+   "category": "other",
+   "aliases": [
+    "ns",
+    "nsgroep",
+    "nederlandsespoorwegen"
+   ],
+   "exact": true
+  },
+  {
+   "name": "OV-chipkaart",
+   "domain": "ov-chipkaart.nl",
+   "category": "other",
+   "aliases": [
+    "ovchipkaart"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Deutsche Bahn",
+   "domain": "bahn.de",
+   "category": "other",
+   "aliases": [
+    "deutschebahn",
+    "dbvertrieb",
+    "bahncard",
+    "dbbahn",
+    "bahn"
+   ],
+   "exact": false
+  },
+  {
+   "name": "SNCF",
+   "domain": "sncf-connect.com",
+   "category": "other",
+   "aliases": [
+    "sncf",
+    "sncfconnect"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Trainline",
+   "domain": "trainline.com",
+   "category": "other",
+   "aliases": [
+    "trainline"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Lime",
+   "domain": "li.me",
+   "category": "other",
+   "aliases": [
+    "lime",
+    "limescooter",
+    "li"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Bolt",
+   "domain": "bolt.eu",
+   "category": "other",
+   "aliases": [
+    "bolt",
+    "boltoperations"
+   ],
+   "exact": true
+  },
+  {
+   "name": "FlixBus",
+   "domain": "flixbus.com",
+   "category": "other",
+   "aliases": [
+    "flixbus"
+   ],
+   "exact": false
+  },
+  {
+   "name": "Apple",
+   "domain": "apple.com",
+   "category": "other",
+   "aliases": [
+    "apple",
+    "applecombill",
+    "itunes",
+    "appleservices",
+    "applestore"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Google",
+   "domain": "google.com",
+   "category": "other",
+   "aliases": [
+    "google",
+    "googleplay",
+    "googlecloud",
+    "googleireland"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Amazon",
+   "domain": "amazon.com",
+   "category": "other",
+   "aliases": [
+    "amazon",
+    "amznmktp",
+    "amazonmarketplace",
+    "amazoneu",
+    "amazoncom"
+   ],
+   "exact": true
+  },
+  {
+   "name": "Microsoft",
+   "domain": "microsoft.com",
+   "category": "other",
+   "aliases": [
+    "microsoft",
+    "microsoftstore",
+    "microsoftcorporation",
+    "microsoftireland"
+   ],
+   "exact": true
+  }
+ ]
+}
