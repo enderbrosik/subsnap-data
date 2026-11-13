@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updated": "2026-11-06",
+  "version": 3,
+  "updated": "2026-11-13",
   "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
     {
@@ -186,7 +186,8 @@
       "plans": [
         {
           "regions": [
-            "NL"
+            "NL",
+            "BE"
           ],
           "currency": "EUR",
           "plans": [
@@ -348,6 +349,152 @@
             {
               "name": "Family",
               "price": 27.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "IT",
+            "ES"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 16.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 20.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 16.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 20.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "IE"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 18.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 22.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "FI"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 7.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 18.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "PT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 4.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family 4",
+              "price": 15.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family 6",
+              "price": 16.99,
               "cycle": "monthly"
             }
           ]
