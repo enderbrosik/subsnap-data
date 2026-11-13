@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated": "2026-11-13",
   "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
@@ -169,6 +169,191 @@
             {
               "name": "Premium",
               "price": 28.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "AT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 10.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 15.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "BE",
+            "LU"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 10.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 16.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "ES"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 14.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "IT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 7.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 14.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 21.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "FI"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 10.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 15.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 19.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 12.49,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 15.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "IE"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 18.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 25.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "PT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Basic",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 12.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 17.99,
               "cycle": "monthly"
             }
           ]
@@ -495,6 +680,34 @@
             {
               "name": "Family 6",
               "price": 16.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "GR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 4.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 14.99,
               "cycle": "monthly"
             }
           ]
