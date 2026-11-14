@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updated": "2026-11-13",
+  "version": 5,
+  "updated": "2026-11-14",
   "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
     {
@@ -372,7 +372,8 @@
         {
           "regions": [
             "NL",
-            "BE"
+            "BE",
+            "LU"
           ],
           "currency": "EUR",
           "plans": [
@@ -708,6 +709,34 @@
             {
               "name": "Family",
               "price": 14.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "FR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 7.07,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 12.14,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Duo",
+              "price": 17.2,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 21.24,
               "cycle": "monthly"
             }
           ]
