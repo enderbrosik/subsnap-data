@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updated": "2026-11-14",
+  "version": 6,
+  "updated": "2026-11-15",
   "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
     {
@@ -792,6 +792,29 @@
               "cycle": "monthly"
             }
           ]
+        },
+        {
+          "regions": [
+            "GB"
+          ],
+          "currency": "GBP",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 15.99,
+              "cycle": "monthly"
+            }
+          ]
         }
       ]
     },
@@ -1051,7 +1074,12 @@
           "regions": [
             "NL",
             "DE",
-            "FR"
+            "FR",
+            "IT",
+            "ES",
+            "AT",
+            "IE",
+            "FI"
           ],
           "currency": "EUR",
           "plans": [
@@ -1160,6 +1188,29 @@
             {
               "name": "Family",
               "price": 23.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "PT"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Student",
+              "price": 4.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Individual",
+              "price": 8.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Family",
+              "price": 14.99,
               "cycle": "monthly"
             }
           ]
