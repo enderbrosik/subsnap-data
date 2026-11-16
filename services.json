@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "updated": "2026-11-15",
+  "version": 7,
+  "updated": "2026-11-16",
   "note": "Plan prices come from each service's own website on the 'updated' date and change over time. Shared by the iPhone/Mac and Android/Windows apps. 'category' sets the category when a service is picked from the list; 'hidden' keeps a catch-all entry out of that list.",
   "services": [
     {
@@ -807,6 +807,30 @@
             {
               "name": "Standard",
               "price": 11.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Premium",
+              "price": 15.99,
+              "cycle": "monthly"
+            }
+          ]
+        },
+        {
+          "regions": [
+            "DE",
+            "FR"
+          ],
+          "currency": "EUR",
+          "plans": [
+            {
+              "name": "Standard with ads",
+              "price": 6.99,
+              "cycle": "monthly"
+            },
+            {
+              "name": "Standard",
+              "price": 10.99,
               "cycle": "monthly"
             },
             {
